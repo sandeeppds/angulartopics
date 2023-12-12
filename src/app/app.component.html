@@ -1,8 +1,7 @@
 
 
-<!-- <app-header> </app-header>
+<app-header> </app-header>
 <app-specremove></app-specremove>
-
 <form #myForm="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Name:</label>
@@ -31,19 +30,23 @@
   <div appCustombg [appCustombg]="'lightblue'">
     Hover over me to change my background color!
   </div>
+  <hr>
+  Multiplication Pipe
   <p>{{5 | multiply:5}}</p>
-
+<hr>
+ 
 <app-custome-menu-bar></app-custome-menu-bar>
+ 
+<hr>
 <app-parent></app-parent>
-<router-outlet></router-outlet> -->
+<hr>
+<router-outlet></router-outlet>  
 Interpolation : {{title}}
 <br>
 Method : {{Interpolation()}}
 <br>
 {{"Interpolation inside :" + title}} 
-<!-- This is a custom element : <app-p-binding></app-p-binding>  -->
-<hr>
-
+ <!-- This is a custom element : <app-p-binding></app-p-binding>   -->
 <hr>
  As a class value <div class='app-p-binding'></div>
  As a  Property <div app-p-binding></div> 
