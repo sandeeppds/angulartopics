@@ -1,0 +1,31 @@
+<h2>For Loop</h2>
+<ul style="display: block;list-style: none;margin-bottom: 20px;">
+    <li><h5 style="margin-bottom: 10px;">For Loop using array</h5></li>
+    <li *ngFor="let car of cars; index as i">{{i}} {{car}}</li>
+</ul>
+<ul style="display: block;list-style: none;margin-bottom: 20px;">
+    <li><h5 style="margin-bottom: 10px;">For Loop using object</h5></li>
+    <li *ngFor="let emp of empDetails | keyvalue">
+        {{emp.key}}--{{emp.value}}
+    </li>
+</ul>
+
+<ul style="display: block;list-style: none;margin-bottom: 20px;">
+    <li><h5 style="margin-bottom: 10px;">For Loop using Multiple object in array</h5></li>
+ 
+    <li>
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Role</th>
+            </thead>
+            <tbody >
+                <tr *ngFor="let empheading of empInfo">
+                    <td *ngFor="let emptitle of empheading | keyvalue">{{emptitle.value}}</td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </li>
+</ul>

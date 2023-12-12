@@ -1,0 +1,18 @@
+<h2>Structural Directives </h2>
+<h2>If condition *ngIf or ngIf</h2>
+
+ 
+<!-- <h2 *ngIf="check ; else eBlock">True Block</h2> -->
+<h2 *ngIf="check; then tBlock else eBlock"></h2>
+<ng-template #eBlock>
+  <h2>If condition False Block</h2>
+</ng-template>
+
+<ng-template #tBlock>
+  <h3>If condition True Block </h3> 
+</ng-template> 
+
+<app-switchcase></app-switchcase>
+<br>
+<app-for-loop></app-for-loop>
+<br><hr>

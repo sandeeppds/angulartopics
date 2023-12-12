@@ -1,0 +1,20 @@
+<div>
+    <div>
+            <form (ngSubmit)="onSubmit()"  [formGroup]="loginForm" > 
+                        <label> Email:</label>
+                        <input type="text" formControlName="login" required="true"/>
+                         
+                        <label> Password:</label>
+                        <input type="text" formControlName="password" />
+                    <input type="submit" value="Submit"/>
+            </form>
+    </div>
+    <div>
+            <div *ngIf="(countries$ | async) as countries">
+                  
+                    <div *ngFor="let country of countries">
+                        {{country.name.common}}
+                    </div>
+            </div>
+    </div>
+</div>

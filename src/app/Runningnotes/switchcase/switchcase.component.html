@@ -1,0 +1,9 @@
+<h2>Switch Case</h2>
+Switch case "[ngSwitch]"-property Binding
+ <div [ngSwitch]="mySwitchCase" style="margin-top: 20px;">
+    <div *ngSwitchCase="'one'" class="conditions">Switch condition one if [ngSwitch]="mySwitchCase=one"</div>
+    <div *ngSwitchCase="'two'" class="conditions">Switch condition two</div>
+    <div *ngSwitchDefault  class="conditions">
+        If Switch condition is not satisfied Default text (this condition) is displayed
+    </div>
+ </div>
