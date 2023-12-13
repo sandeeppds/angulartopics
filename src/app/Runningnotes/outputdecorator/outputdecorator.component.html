@@ -1,3 +1,6 @@
 <h2>@Input @Output Decorators</h2>
 <h4 style="margin-bottom: 0;">@Input Decorator :</h4>
-<app-inputdecorator [fromParent]="parentdata"></app-inputdecorator>
+<app-inputdecorator 
+[fromParent]="parentdata"
+(sendingMessageFromChild)="childtoparent = $event"></app-inputdecorator>
+{{childtoparent}}

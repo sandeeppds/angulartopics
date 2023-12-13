@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class OutputdecoratorComponent {
   public parentdata = "This data is coming from parent using @Input Decorator"
+  public childtoparent : any;
 }
