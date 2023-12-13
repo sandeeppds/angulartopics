@@ -2,7 +2,7 @@
 
 <app-header> </app-header>
 <app-specremove></app-specremove>
-<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" class="form-control" [(ngModel)]="formData.name" required>
@@ -38,8 +38,7 @@
 <app-custome-menu-bar></app-custome-menu-bar>
  
 <hr>
-<app-parent></app-parent>
-<hr>
+ 
 <router-outlet></router-outlet>  
 Interpolation : {{title}}
 <br>
@@ -51,7 +50,11 @@ Method : {{Interpolation()}}
  As a class value <div class='app-p-binding'></div>
  As a  Property <div app-p-binding></div> 
 <app-class-binding></app-class-binding>
+<hr>
 <app-style-binding></app-style-binding>
 <app-event-binding></app-event-binding>
 <app-if></app-if>
 <app-referencevariablea></app-referencevariablea>
+<hr> 
+<app-outputdecorator></app-outputdecorator>
+<hr>

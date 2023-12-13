@@ -21,6 +21,8 @@ import { IfComponent } from './Runningnotes/if/if.component';
 import { ReferencevariableaComponent } from './Runningnotes/referencevariablea/referencevariablea.component';
 import { SwitchcaseComponent } from './Runningnotes/switchcase/switchcase.component';
 import { ForLoopComponent } from './Runningnotes/for-loop/for-loop.component';
+import { OutputdecoratorComponent } from './Runningnotes/outputdecorator/outputdecorator.component';
+import { InputdecoratorComponent } from './Runningnotes/inputdecorator/inputdecorator.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { ForLoopComponent } from './Runningnotes/for-loop/for-loop.component';
     ReferencevariableaComponent,
     SwitchcaseComponent,
     ForLoopComponent,
+    OutputdecoratorComponent,
+    InputdecoratorComponent,
   ],
   imports: [
     BrowserModule,
